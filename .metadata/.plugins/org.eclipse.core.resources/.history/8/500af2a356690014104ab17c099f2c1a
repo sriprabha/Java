@@ -1,0 +1,110 @@
+package com.string.util;
+
+import java.util.HashMap;
+
+public class IsomorphicUtil {
+
+	public static boolean isIsomorphic(String str1, String str2){
+		if(str1.length()!=str2.length()){
+			return false;
+		}
+		
+		if(str1.length()==1){
+			return true;
+		}
+		HashMap<Character, Integer> characters1=new HashMap<>();
+		HashMap<Character, Integer> characters2=new HashMap<>();
+		
+		StringBuilder outputStr1=new StringBuilder();
+		StringBuilder outputStr2=new StringBuilder();
+		
+		
+ 		for(int i=0;i<str1.length();i++){
+ 			char s=str1.charAt(i);
+			char v=str2.charAt(i);
+			
+			if(!characters1.containsKey(s)){
+				characters1.put(s, i);
+			}
+			outputStr1.append(characters1.get(s));
+			
+			if(!characters2.containsKey(v)){
+				characters2.put(v, i);
+			}
+			outputStr2.append(characters2.get(v));	
+ 		}
+ 		System.out.println(outputStr1);
+ 		System.out.println(outputStr2);
+ 		
+ 		if(!outputStr1.equals(outputStr2)){
+ 			return false;
+ 		}
+ 		return true;
+	}
+
+	private static boolean mapContainsChar(char[] str, int i, String s) {
+		return s.equals(String.valueOf(str[i]));
+	}
+	
+	public static boolean isIsomorphic1(String str1, String str2){
+		if(str1.length()!=str2.length()){
+			return false;
+		}
+		
+		HashMap<String, String> mappedValues=new HashMap<>();
+		
+		char[] s1=str1.toCharArray();
+		char[] s2=str2.toCharArray();
+		for(int i=0;i<s1.length;i++){
+			mappedValues.put(String.valueOf(s1[i]), String.valueOf(s2[i]));
+		}
+		
+		char[] mappedStr=new char[s1.length];
+		for(int i=0;i<s1.length;i++){
+			mappedStr[i]=mappedValues.get(String.valueOf(s1[i])).charAt(0);
+		}
+		
+		if(String.valueOf(mappedStr).equals(str2)){
+			return true;
+		}
+		return false;
+		
+	}
+	
+	public static boolean isIsomorphic2(String str1, String str2){
+		
+		
+		String encodedValue1=encode(str1);
+		String encodedValue2=encode(str2);
+
+		System.out.println("Encode1 is "+encodedValue1);
+		System.out.println("Encode2 is "+encodedValue2);
+		
+		if(encodedValue1.equals(encodedValue2)){
+			return true;
+		}
+		return false;
+	}
+		
+	static HashMap<String, String> map=new HashMap<>();
+	private static String encode(String str){
+		
+		String encodedValue="";
+		
+		for (int i=0;i<str.length();i++){
+			if(!map.containsKey(String.valueOf(str.charAt(i)))){
+				map.put(String.valueOf(str.charAt(i)), String.valueOf(i));
+			}
+		}
+		System.out.println(map);
+		for (int i=0;i<str.length();i++){
+			String value=map.get(String.valueOf(str.charAt(i)));
+			
+			encodedValue+=value;
+			System.out.println(encodedValue);
+		}
+		
+		return encodedValue;
+	}
+	
+}

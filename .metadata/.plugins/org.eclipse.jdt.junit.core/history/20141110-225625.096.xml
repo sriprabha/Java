@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="IsomorphicUtilTests" project="String" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="com.string.util.IsomorphicUtilTests" time="0.014">
+    <testcase name="testReturnsFalseForIsmorphicWords1" classname="com.string.util.IsomorphicUtilTests" time="0.005"/>
+    <testcase name="testReturnsFalseForIsmorphicWords2" classname="com.string.util.IsomorphicUtilTests" time="0.001"/>
+    <testcase name="testReturnsFalseForIsmorphicWords3" classname="com.string.util.IsomorphicUtilTests" time="0.002"/>
+    <testcase name="testReturnsTrueForIsmorphicWords1" classname="com.string.util.IsomorphicUtilTests" time="0.002"/>
+    <testcase name="testReturnsTrueForIsmorphicWords3" classname="com.string.util.IsomorphicUtilTests" time="0.001"/>
+    <testcase name="testReturnsTrueForIsmorphicWords4" classname="com.string.util.IsomorphicUtilTests" time="0.001"/>
+    <testcase name="testReturnsTrueForIsmorphicWords5" classname="com.string.util.IsomorphicUtilTests" time="0.001"/>
+  </testsuite>
+</testrun>

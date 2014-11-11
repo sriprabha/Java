@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private boolean mapContainsChar(char[] s2, int i, String s)&apos; from &apos;com.string.util.IsomorphicUtil.isIsomorphic()&apos; to &apos;com.string.util.IsomorphicUtil&apos;&#x0A;- Original project: &apos;String&apos;&#x0A;- Method name: &apos;mapContainsChar&apos;&#x0A;- Destination type: &apos;com.string.util.IsomorphicUtil&apos;&#x0A;- Declared visibility: &apos;private&apos;&#x0A;- Replace occurrences of statements with method" comments="false" description="Extract method &apos;mapContainsChar&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src\/main\/java&lt;com.string.util{IsomorphicUtil.java" name="mapContainsChar" replace="true" selection="437 26" stamp="1413246180006" version="1.0" visibility="2"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static boolean isEqualStrings(StringBuilder outputStr1, StringBuilder outputStr2)&apos; from &apos;com.string.util.IsomorphicUtil.isIsomorphic()&apos; to &apos;com.string.util.IsomorphicUtil&apos;&#x0A;- Original project: &apos;String&apos;&#x0A;- Method name: &apos;isEqualStrings&apos;&#x0A;- Destination type: &apos;com.string.util.IsomorphicUtil&apos;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;isEqualStrings&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src\/main\/java&lt;com.string.util{IsomorphicUtil.java" name="isEqualStrings" replace="false" selection="805 61" stamp="1415678501746" version="1.0" visibility="2"/>
+</session>

@@ -1,0 +1,44 @@
+package com.string.util;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+
+public class IsomorphicUtilTests {
+
+	@Test
+	public void testReturnsTrueForIsmorphicWords1() {
+		Assert.assertEquals(true, IsomorphicUtil.isIsomorphic2("foo","app"));
+	}
+	
+	@Test
+	public void testReturnsFalseForIsmorphicWords2() {
+		Assert.assertEquals(false, IsomorphicUtil.isIsomorphic2("bar","foo"));
+	}
+	
+	@Test
+	public void testReturnsFalseForIsmorphicWords1() {
+		Assert.assertEquals(false, IsomorphicUtil.isIsomorphic2("abca","zbxx"));
+	}
+	
+	@Test
+	public void testReturnsTrueForIsmorphicWords3() {
+		Assert.assertEquals(true, IsomorphicUtil.isIsomorphic2("abcadx","zbxzdc"));
+	}
+	
+	@Test
+	public void testReturnsFalseForIsmorphicWords3() {
+		Assert.assertEquals(false, IsomorphicUtil.isIsomorphic2("abcadx","zbxzde"));
+	}
+	
+	@Test
+	public void testReturnsTrueForIsmorphicWords4() {
+		Assert.assertEquals(true, IsomorphicUtil.isIsomorphic1("turtle","tletur"));
+	}
+	
+	@Test
+	public void testReturnsTrueForIsmorphicWords5() {
+		Assert.assertEquals(true, IsomorphicUtil.isIsomorphic2("ab","ca"));
+	}
+
+}
